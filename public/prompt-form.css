@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.prompt-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+}
+
+.prompt-form input,
+.prompt-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.prompt-form input:focus,
+.prompt-form textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.prompt-form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.prompt-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+}
+
+.prompt-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.prompt-form button.cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.prompt-form button.delete {
+    background-color: #ff9800;
+    color: white;
+}
+
+.prompt-form button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
